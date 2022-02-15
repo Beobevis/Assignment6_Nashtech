@@ -38,7 +38,7 @@
                 <td>@item.BirthPlace</td>
                 <td>
                     <a type="button" class="btn btn-success" asp-action="EditPerson" asp-controller="Member"asp-route-index="@index">Edit</a>
-                    <button type="button" class="btn btn-danger">Delete</button>
+                    <a type="button" class="btn btn-danger" asp-action="DeletePerson" asp-controller="Member" asp-route-index="@index">Delete</a>
                 </td>
             </tr>
         }      

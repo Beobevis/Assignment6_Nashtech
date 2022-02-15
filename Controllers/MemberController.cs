@@ -89,24 +89,28 @@ public class MemberController : Controller
                 IsGraduated = false
             }
         };
-    public IActionResult Index(){
+    public IActionResult Index()
+    {
         return View(persons);
     }
-    public IActionResult AddPerson(){
+    public IActionResult AddPerson()
+    {
         return View();
     }
     [HttpPost]
-    public IActionResult AddPerson(Person model){
-        if(!ModelState.IsValid) return View();
-        
+    public IActionResult AddPerson(Person model)
+    {
+        if (!ModelState.IsValid) return View();
+
         persons.Add(model);
 
         return RedirectToAction("Index");
     }
 
-    public IActionResult EditPerson(int index){
-        if(index <=0 && index > persons.Count)
-        return RedirectToAction("Index");
+    public IActionResult EditPerson(int index)
+    {
+        if (index <= 0 && index > persons.Count)
+            return RedirectToAction("Index");
 
         var person = persons[index - 1];
         var model = new PersonEditModel(person);
@@ -115,12 +119,22 @@ public class MemberController : Controller
         return View(model);
     }
     [HttpPost]
-    public IActionResult Edit(PersonEditModel model){
-        if(!ModelState.IsValid) return View();
-        persons[model.Index - 1] =model;
+    public IActionResult EditPerson(PersonEditModel model)
+    {
+        if (!ModelState.IsValid) return View();
+        persons[model.Index - 1] = model;
 
         return RedirectToAction("Index");
     }
+    [HttpPost]
+    public IActionResult DeletePerson(int index)
+    {
+        if (!ModelState.IsValid) return View();
+        persons[model.Index - 1] = model;
+
+        return RedirectToAction("Index");
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
