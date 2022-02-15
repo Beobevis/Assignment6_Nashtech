@@ -1,0 +1,58 @@
+@model Person
+@{
+    ViewData["Title"] = "Create New Person";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Member</h1>
+    
+    <hr />
+
+</div>
+
+<div>
+    <div class="col-6 offset-3">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <h1>Add New Person</h1>
+        <form asp-action="AddPerson" asp-controller="Member" method="post" class="row">
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-labely"></label>
+                <input asp-for="FirstName" type="text" class="form-control" placeholder="First Name" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-labely"></label>
+                <input asp-for="LastName" type="text" class="form-control" placeholder="Last Name" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Gender" class="control-labely"></label>
+                <select asp-for="Gender" type="text" class="form-control" placeholder="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DOB" class="control-labely"></label>
+                <input asp-for="DOB" type="date" class="form-control" placeholder="Date Of Birth" />
+                <span asp-validation-for="DOB" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="BirthPlace" class="control-labely"></label>
+                <input asp-for="BirthPlace" type="text" class="form-control" placeholder="Birth Place" />
+                <span asp-validation-for="BirthPlace" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                </br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <a class="btn btn-primary" asp-action="Index" asp-controller="Member">Back to Member List</a>
+            </div>
+        </form>
+
+
+    </div>
+</div>

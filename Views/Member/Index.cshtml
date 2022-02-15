@@ -1,0 +1,47 @@
+@model List<Person>
+
+@{
+    ViewData["Title"] = "Member List";
+    Layout = "_Layout";
+}
+<div class="text-center">
+<h1 class="display-4">Member List</h1></div>
+<p>
+    <a class="btn btn-primary" asp-action="AddPerson" asp-controller="Member">Create New Member</a>
+</p>
+<div>
+<table class="table text-center">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Date Of Birth</th>
+            <th scope="col">Gender</th>
+             <th scope="col">Age</th>
+            <th scope="col">BirthPlace</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Model != null)
+        @for(var index = 1; index <=Model.Count;index++)
+        {
+            var item = Model[index-1];
+            <tr>
+                <th scope="row">@index</th>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+                <td>@item.DOB.ToString("dd/MM/yyyy")</td>
+                <td>@item.Gender</td>
+                <td>@item.Age</td>
+                <td>@item.BirthPlace</td>
+                <td>
+                    <a type="button" class="btn btn-success" asp-action="EditPerson" asp-controller="Member"asp-route-index="@index">Edit</a>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+            </tr>
+        }      
+    </tbody>
+</table>
+</div>
