@@ -93,9 +93,7 @@ public class AssignmentController : Controller
             }
         };
     
-    public IActionResult Index(){
-        return View();
-    }
+   
     // [Route("Assignment/Malemembers")]
     // [Route("Assignment/male-members")]
     //[Route("Nashtech/Assignment/malemembers")]

@@ -129,8 +129,10 @@ public class MemberController : Controller
     [HttpPost]
     public IActionResult DeletePerson(int index)
     {
-        if (!ModelState.IsValid) return View();
-        persons[model.Index - 1] = model;
+        if (index <= 0 && index > persons.Count)
+            return RedirectToAction("Index");
+
+        persons.RemoveAt(index - 1);
 
         return RedirectToAction("Index");
     }
