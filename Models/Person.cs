@@ -6,16 +6,18 @@ namespace Assignment6.Models;
 public class Person
 
 {
-    [Required]
+    [Required, MaxLength(50)]
     public string? FirstName { get; set; }
+    [Required, MaxLength(50)]
     public string? LastName { get; set; }
 
     public string? Gender { get; set; }
 
     public DateTime DOB { get; set; }
 
+    
     public string? PhoneNumber { get; set; }
-
+    [Required]
     public string? BirthPlace { get; set; }
 
     public int Age
@@ -49,15 +51,17 @@ public class Person
 
 
 }
-public class PersonEditModel : Person {
-        public int Index { get; set; }
-        public PersonEditModel(){}
-        public PersonEditModel(Person person){
-            FirstName = person.FirstName;
-            LastName =person.LastName;
-            DOB = person.DOB;
-            Gender = person.Gender;
-            BirthPlace = person.BirthPlace;
-            
-        }
-    } 
+public class PersonEditModel : Person
+{
+    public int Index { get; set; }
+    public PersonEditModel() { }
+    public PersonEditModel(Person person)
+    {
+        FirstName = person.FirstName;
+        LastName = person.LastName;
+        DOB = person.DOB;
+        Gender = person.Gender;
+        BirthPlace = person.BirthPlace;
+
+    }
+}

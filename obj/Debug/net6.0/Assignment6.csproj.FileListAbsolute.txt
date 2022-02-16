@@ -5,7 +5,6 @@ C:\Users\Pc Market\Desktop\Nashtech\Assignment6\bin\Debug\net6.0\Assignment6.exe
 C:\Users\Pc Market\Desktop\Nashtech\Assignment6\bin\Debug\net6.0\Assignment6.deps.json
 C:\Users\Pc Market\Desktop\Nashtech\Assignment6\bin\Debug\net6.0\Assignment6.runtimeconfig.json
 C:\Users\Pc Market\Desktop\Nashtech\Assignment6\bin\Debug\net6.0\Assignment6.dll
-C:\Users\Pc Market\Desktop\Nashtech\Assignment6\bin\Debug\net6.0\ref\Assignment6.dll
 C:\Users\Pc Market\Desktop\Nashtech\Assignment6\bin\Debug\net6.0\Assignment6.pdb
 C:\Users\Pc Market\Desktop\Nashtech\Assignment6\obj\Debug\net6.0\Assignment6.csproj.AssemblyReference.cache
 C:\Users\Pc Market\Desktop\Nashtech\Assignment6\obj\Debug\net6.0\Assignment6.GeneratedMSBuildEditorConfig.editorconfig
@@ -26,3 +25,4 @@ C:\Users\Pc Market\Desktop\Nashtech\Assignment6\obj\Debug\net6.0\Assignment6.pdb
 C:\Users\Pc Market\Desktop\Nashtech\Assignment6\obj\Debug\net6.0\Assignment6.genruntimeconfig.cache
 C:\Users\Pc Market\Desktop\Nashtech\Assignment6\bin\Debug\net6.0\CsvHelper.dll
 C:\Users\Pc Market\Desktop\Nashtech\Assignment6\obj\Debug\net6.0\Assignment6.csproj.CopyComplete
+C:\Users\Pc Market\Desktop\Nashtech\Assignment6\obj\Debug\net6.0\refint\Assignment6.dll

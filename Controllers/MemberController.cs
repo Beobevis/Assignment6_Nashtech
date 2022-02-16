@@ -43,7 +43,7 @@ public class MemberController : Controller
                 LastName = "Huy",
                 FirstName = "Nguyen Duc",
                 Gender = "Male",
-                DOB = new DateTime(1996, 1, 26),
+                DOB = new DateTime(1995, 12, 07),
                 PhoneNumber = "",
                 BirthPlace = "Ha Noi",
                 IsGraduated = false
@@ -93,6 +93,7 @@ public class MemberController : Controller
     {
         return View(persons);
     }
+    
     public IActionResult AddPerson()
     {
         return View();

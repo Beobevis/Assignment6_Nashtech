@@ -51,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pc Market\\Desktop\\Nashtech\\Assignment6\\Assignment6.csproj",
+      "projectUniqueName": "c:\\Users\\Pc Market\\Desktop\\Nashtech\\Assignment6\\Assignment6.csproj",
       "projectName": "Assignment6",
-      "projectPath": "C:\\Users\\Pc Market\\Desktop\\Nashtech\\Assignment6\\Assignment6.csproj",
+      "projectPath": "c:\\Users\\Pc Market\\Desktop\\Nashtech\\Assignment6\\Assignment6.csproj",
       "packagesPath": "C:\\Users\\Pc Market\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pc Market\\Desktop\\Nashtech\\Assignment6\\obj\\",
+      "outputPath": "c:\\Users\\Pc Market\\Desktop\\Nashtech\\Assignment6\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Visual Studio\\SDKs\\NuGetPackages"
@@ -111,7 +111,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
